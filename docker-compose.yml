@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  wordpress:
+    
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    ports:
+      - "8080:80"
+
+    restart: always
+
