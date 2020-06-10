@@ -21,8 +21,8 @@ WORKDIR /var/www
 COPY ./entrypoint.sh /var/www/entrypoint.sh
 RUN chmod +x /var/www/entrypoint.sh
 
-ENTRYPOINT ["/var/www/entrypoint.sh"]
 
+CMD /var/www/entrypoint.sh
 
 
 
@@ -47,6 +47,6 @@ ENTRYPOINT ["/var/www/entrypoint.sh"]
 
 
  
-#EXPOSE 80
+EXPOSE 80
 
 
