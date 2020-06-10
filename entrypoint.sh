@@ -1,5 +1,5 @@
 
-set -e
+#set -e
 
 #find /var/lib/mysql -type f -exec touch {} \;
 
@@ -20,4 +20,13 @@ set -e
 
 
 
+echo "daemon off;" >> /etc/nginx/nginx.conf
+service nginx start
+
+
+
+#while true
+#do
+#    sleep 10
+#done
 
